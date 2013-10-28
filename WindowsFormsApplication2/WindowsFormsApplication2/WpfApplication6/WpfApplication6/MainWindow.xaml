@@ -1,0 +1,75 @@
+﻿<Window x:Class="WpfApplication6.MainWindow"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        Title="MyNotifiactions" Height="120" Width="300" ShowActivated="False"   AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="False" Background="Transparent" Topmost="True" UseLayoutRounding="True">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ButtonStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+        <Grid  x:Name="NotificationWindow" >
+        <Border Name="border" Background="#2a3345" BorderThickness="2" CornerRadius="10" Margin="10" BorderBrush="Black">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" Opacity="0.8" BlurRadius="10"/>
+            </Border.Effect>
+            <Grid Height="50" Width="230">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="bla bla"  Foreground="White" />
+
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="This is the URL to the one bug"  TextOptions.TextRenderingMode="ClearType" TextOptions.TextFormattingMode="Display"  
+                                   FontFamily="Arial" VerticalAlignment="Center"  Margin="2,2,4,4" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Foreground="White"/>
+                <Button x:Name="CloseButton" Grid.Column="1" Width="16" Height="16"  BorderThickness="0" HorizontalAlignment="Right" Margin="0,0,6,0" Style="{StaticResource CloseButton}"  >
+                   
+                </Button>
+            </Grid>
+        </Border>
+        <Grid.Triggers>
+            <EventTrigger   RoutedEvent="Window.Loaded" SourceName="NotificationWindow">
+                <BeginStoryboard x:Name="FadeInStoryBoard">
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetName="NotificationWindow" From="0.01" To="1" Storyboard.TargetProperty="Opacity" Duration="0:0:2"/>
+                        <DoubleAnimation Storyboard.TargetName="NotificationWindow" From="1" To="0" Storyboard.TargetProperty="Opacity" Duration="0:0:2" BeginTime="0:0:6"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="Grid.MouseEnter" SourceName="NotificationWindow">
+                <EventTrigger.Actions>
+                    <SeekStoryboard Offset="0:0:3" BeginStoryboardName="FadeInStoryBoard" />
+                    <PauseStoryboard BeginStoryboardName="FadeInStoryBoard" />
+
+                </EventTrigger.Actions>
+
+            </EventTrigger>
+            <EventTrigger RoutedEvent="Grid.MouseLeave" SourceName="NotificationWindow">
+                <EventTrigger.Actions>
+                    <SeekStoryboard Offset="0:0:3" BeginStoryboardName="FadeInStoryBoard" />
+                    <ResumeStoryboard BeginStoryboardName="FadeInStoryBoard"></ResumeStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="Button.Click" SourceName="CloseButton">
+                <BeginStoryboard>
+                    <Storyboard >
+                        <DoubleAnimation Storyboard.TargetName="NotificationWindow" From="1" To="0" Storyboard.TargetProperty="(Grid.Opacity)" Duration="0:0:0"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+
+        </Grid.Triggers>
+    </Grid>
+
+
+</Window>

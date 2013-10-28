@@ -1,0 +1,1400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OneBugDatamartDataSet" targetNamespace="http://tempuri.org/OneBugDatamartDataSet.xsd" xmlns:mstns="http://tempuri.org/OneBugDatamartDataSet.xsd" xmlns="http://tempuri.org/OneBugDatamartDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OneBugDatamartConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OneBugDatamartConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication2.Properties.Settings.GlobalReference.Default.OneBugDatamartConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_Associated_ReleasesTableAdapter" GeneratorDataComponentClassName="OB_Associated_ReleasesTableAdapter" Name="OB_Associated_Releases" UserDataComponentName="OB_Associated_ReleasesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_Associated_Releases" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, ReleaseAssociated FROM dbo.OB_Associated_Releases</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="ReleaseAssociated" DataSetColumn="ReleaseAssociated" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_BugsTableAdapter" GeneratorDataComponentClassName="OB_BugsTableAdapter" Name="OB_Bugs" UserDataComponentName="OB_BugsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_Bugs" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, Title, Description, Comments, Tags, ThirdLevelInc, State, Project, Product, FoundInRelease, TargetRelease, TargetReleaseSingular, TargetReleaseGateway, TargetReleasePlural, Feature, Component, BuildNumber, SubStatus, Priority, Severity, Likelihood, Regression, RegressionType, DefectOrigin, DefectType, Blocking, Reproducibility, SecurityCriticality, ActionItem, Customer, GatewayType, SubmitterId, SubmitterNm, OwnerId, OwnerNm, LastModifierId, LastModifierNm, FeatureLeadId, LastStateChangeDate, FeatureLeadNm, ComponentLeadId, ComponentLeadNm, DevLeadId, DevLeadNm, TestLeadId, TestLeadNm, DeveloperId, DeveloperNm, VerifierId, VerifierNm, LastVerifiedById, LastVerifiedByNm, EstFixComplexity, SubmitDate, LastModifiedDate, FixDate, LastVerifiedDate, TestCases, TestScenarios, OriginalSystem, OriginalID, CRMID, BuildType, CustomerCommitment, EstimatedFixDate, EstimatedTimeToFix, LastWorkingBuild, RevenueValue, RootCauseID, ActiveInactive, CommittedDate, [Group], RegressionBuildNum, SLProject, BetaKnownIssue, RTMKnownIssue, PubsContact, NumberOfServers, SubComponent, IssuetypePrefix, ReleaseFixed, ReleaseVerified, ReleaseAssociated, Language, Platform, IssueType, MigrationInfo FROM dbo.OB_Bugs</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Comments" DataSetColumn="Comments" />
+              <Mapping SourceColumn="Tags" DataSetColumn="Tags" />
+              <Mapping SourceColumn="ThirdLevelInc" DataSetColumn="ThirdLevelInc" />
+              <Mapping SourceColumn="State" DataSetColumn="State" />
+              <Mapping SourceColumn="Project" DataSetColumn="Project" />
+              <Mapping SourceColumn="Product" DataSetColumn="Product" />
+              <Mapping SourceColumn="FoundInRelease" DataSetColumn="FoundInRelease" />
+              <Mapping SourceColumn="TargetRelease" DataSetColumn="TargetRelease" />
+              <Mapping SourceColumn="TargetReleaseSingular" DataSetColumn="TargetReleaseSingular" />
+              <Mapping SourceColumn="TargetReleaseGateway" DataSetColumn="TargetReleaseGateway" />
+              <Mapping SourceColumn="TargetReleasePlural" DataSetColumn="TargetReleasePlural" />
+              <Mapping SourceColumn="Feature" DataSetColumn="Feature" />
+              <Mapping SourceColumn="Component" DataSetColumn="Component" />
+              <Mapping SourceColumn="BuildNumber" DataSetColumn="BuildNumber" />
+              <Mapping SourceColumn="SubStatus" DataSetColumn="SubStatus" />
+              <Mapping SourceColumn="Priority" DataSetColumn="Priority" />
+              <Mapping SourceColumn="Severity" DataSetColumn="Severity" />
+              <Mapping SourceColumn="Likelihood" DataSetColumn="Likelihood" />
+              <Mapping SourceColumn="Regression" DataSetColumn="Regression" />
+              <Mapping SourceColumn="RegressionType" DataSetColumn="RegressionType" />
+              <Mapping SourceColumn="DefectOrigin" DataSetColumn="DefectOrigin" />
+              <Mapping SourceColumn="DefectType" DataSetColumn="DefectType" />
+              <Mapping SourceColumn="Blocking" DataSetColumn="Blocking" />
+              <Mapping SourceColumn="Reproducibility" DataSetColumn="Reproducibility" />
+              <Mapping SourceColumn="SecurityCriticality" DataSetColumn="SecurityCriticality" />
+              <Mapping SourceColumn="ActionItem" DataSetColumn="ActionItem" />
+              <Mapping SourceColumn="Customer" DataSetColumn="Customer" />
+              <Mapping SourceColumn="GatewayType" DataSetColumn="GatewayType" />
+              <Mapping SourceColumn="SubmitterId" DataSetColumn="SubmitterId" />
+              <Mapping SourceColumn="SubmitterNm" DataSetColumn="SubmitterNm" />
+              <Mapping SourceColumn="OwnerId" DataSetColumn="OwnerId" />
+              <Mapping SourceColumn="OwnerNm" DataSetColumn="OwnerNm" />
+              <Mapping SourceColumn="LastModifierId" DataSetColumn="LastModifierId" />
+              <Mapping SourceColumn="LastModifierNm" DataSetColumn="LastModifierNm" />
+              <Mapping SourceColumn="FeatureLeadId" DataSetColumn="FeatureLeadId" />
+              <Mapping SourceColumn="LastStateChangeDate" DataSetColumn="LastStateChangeDate" />
+              <Mapping SourceColumn="FeatureLeadNm" DataSetColumn="FeatureLeadNm" />
+              <Mapping SourceColumn="ComponentLeadId" DataSetColumn="ComponentLeadId" />
+              <Mapping SourceColumn="ComponentLeadNm" DataSetColumn="ComponentLeadNm" />
+              <Mapping SourceColumn="DevLeadId" DataSetColumn="DevLeadId" />
+              <Mapping SourceColumn="DevLeadNm" DataSetColumn="DevLeadNm" />
+              <Mapping SourceColumn="TestLeadId" DataSetColumn="TestLeadId" />
+              <Mapping SourceColumn="TestLeadNm" DataSetColumn="TestLeadNm" />
+              <Mapping SourceColumn="DeveloperId" DataSetColumn="DeveloperId" />
+              <Mapping SourceColumn="DeveloperNm" DataSetColumn="DeveloperNm" />
+              <Mapping SourceColumn="VerifierId" DataSetColumn="VerifierId" />
+              <Mapping SourceColumn="VerifierNm" DataSetColumn="VerifierNm" />
+              <Mapping SourceColumn="LastVerifiedById" DataSetColumn="LastVerifiedById" />
+              <Mapping SourceColumn="LastVerifiedByNm" DataSetColumn="LastVerifiedByNm" />
+              <Mapping SourceColumn="EstFixComplexity" DataSetColumn="EstFixComplexity" />
+              <Mapping SourceColumn="SubmitDate" DataSetColumn="SubmitDate" />
+              <Mapping SourceColumn="LastModifiedDate" DataSetColumn="LastModifiedDate" />
+              <Mapping SourceColumn="FixDate" DataSetColumn="FixDate" />
+              <Mapping SourceColumn="LastVerifiedDate" DataSetColumn="LastVerifiedDate" />
+              <Mapping SourceColumn="TestCases" DataSetColumn="TestCases" />
+              <Mapping SourceColumn="TestScenarios" DataSetColumn="TestScenarios" />
+              <Mapping SourceColumn="OriginalSystem" DataSetColumn="OriginalSystem" />
+              <Mapping SourceColumn="OriginalID" DataSetColumn="OriginalID" />
+              <Mapping SourceColumn="CRMID" DataSetColumn="CRMID" />
+              <Mapping SourceColumn="BuildType" DataSetColumn="BuildType" />
+              <Mapping SourceColumn="CustomerCommitment" DataSetColumn="CustomerCommitment" />
+              <Mapping SourceColumn="EstimatedFixDate" DataSetColumn="EstimatedFixDate" />
+              <Mapping SourceColumn="EstimatedTimeToFix" DataSetColumn="EstimatedTimeToFix" />
+              <Mapping SourceColumn="LastWorkingBuild" DataSetColumn="LastWorkingBuild" />
+              <Mapping SourceColumn="RevenueValue" DataSetColumn="RevenueValue" />
+              <Mapping SourceColumn="RootCauseID" DataSetColumn="RootCauseID" />
+              <Mapping SourceColumn="ActiveInactive" DataSetColumn="ActiveInactive" />
+              <Mapping SourceColumn="CommittedDate" DataSetColumn="CommittedDate" />
+              <Mapping SourceColumn="Group" DataSetColumn="Group" />
+              <Mapping SourceColumn="RegressionBuildNum" DataSetColumn="RegressionBuildNum" />
+              <Mapping SourceColumn="SLProject" DataSetColumn="SLProject" />
+              <Mapping SourceColumn="BetaKnownIssue" DataSetColumn="BetaKnownIssue" />
+              <Mapping SourceColumn="RTMKnownIssue" DataSetColumn="RTMKnownIssue" />
+              <Mapping SourceColumn="PubsContact" DataSetColumn="PubsContact" />
+              <Mapping SourceColumn="NumberOfServers" DataSetColumn="NumberOfServers" />
+              <Mapping SourceColumn="SubComponent" DataSetColumn="SubComponent" />
+              <Mapping SourceColumn="IssuetypePrefix" DataSetColumn="IssuetypePrefix" />
+              <Mapping SourceColumn="ReleaseFixed" DataSetColumn="ReleaseFixed" />
+              <Mapping SourceColumn="ReleaseVerified" DataSetColumn="ReleaseVerified" />
+              <Mapping SourceColumn="ReleaseAssociated" DataSetColumn="ReleaseAssociated" />
+              <Mapping SourceColumn="Language" DataSetColumn="Language" />
+              <Mapping SourceColumn="Platform" DataSetColumn="Platform" />
+              <Mapping SourceColumn="IssueType" DataSetColumn="IssueType" />
+              <Mapping SourceColumn="MigrationInfo" DataSetColumn="MigrationInfo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_ChangeActionsTableAdapter" GeneratorDataComponentClassName="OB_ChangeActionsTableAdapter" Name="OB_ChangeActions" UserDataComponentName="OB_ChangeActionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_ChangeActions" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CHACTID, BUGID, Time, ChangerId, ChangerNm, ActionId, ActionNm, PriorOwnerId, PriorOwnerNm, PriorState, Transition, NewState, NewOwnerId, NewOwnerNm FROM dbo.OB_ChangeActions</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CHACTID" DataSetColumn="CHACTID" />
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="Time" DataSetColumn="Time" />
+              <Mapping SourceColumn="ChangerId" DataSetColumn="ChangerId" />
+              <Mapping SourceColumn="ChangerNm" DataSetColumn="ChangerNm" />
+              <Mapping SourceColumn="ActionId" DataSetColumn="ActionId" />
+              <Mapping SourceColumn="ActionNm" DataSetColumn="ActionNm" />
+              <Mapping SourceColumn="PriorOwnerId" DataSetColumn="PriorOwnerId" />
+              <Mapping SourceColumn="PriorOwnerNm" DataSetColumn="PriorOwnerNm" />
+              <Mapping SourceColumn="PriorState" DataSetColumn="PriorState" />
+              <Mapping SourceColumn="Transition" DataSetColumn="Transition" />
+              <Mapping SourceColumn="NewState" DataSetColumn="NewState" />
+              <Mapping SourceColumn="NewOwnerId" DataSetColumn="NewOwnerId" />
+              <Mapping SourceColumn="NewOwnerNm" DataSetColumn="NewOwnerNm" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_FixedIn_ReleasesTableAdapter" GeneratorDataComponentClassName="OB_FixedIn_ReleasesTableAdapter" Name="OB_FixedIn_Releases" UserDataComponentName="OB_FixedIn_ReleasesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_FixedIn_Releases" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, ReleaseFixed FROM dbo.OB_FixedIn_Releases</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="ReleaseFixed" DataSetColumn="ReleaseFixed" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_FixesTableAdapter" GeneratorDataComponentClassName="OB_FixesTableAdapter" Name="OB_Fixes" UserDataComponentName="OB_FixesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_Fixes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FIXID, BUGID, FixTitle, FixDescription, FixVerificationInstructions, FixSubmitterId, FixSubmitterNm, FixSubmitDate, FixResolution, FixAutomationLoop, FixBuildNumber, FixTimeDays, FixChangeNumber, FixNumber, FixVerifiedBuildNumber, FixVerificationTimeHours, FixVerificationNote, FixLastModifierId, FixLastModifierNm, FixLastModifiedDate, TargetRelease, Fixed, Verified FROM dbo.OB_Fixes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FIXID" DataSetColumn="FIXID" />
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="FixTitle" DataSetColumn="FixTitle" />
+              <Mapping SourceColumn="FixDescription" DataSetColumn="FixDescription" />
+              <Mapping SourceColumn="FixVerificationInstructions" DataSetColumn="FixVerificationInstructions" />
+              <Mapping SourceColumn="FixSubmitterId" DataSetColumn="FixSubmitterId" />
+              <Mapping SourceColumn="FixSubmitterNm" DataSetColumn="FixSubmitterNm" />
+              <Mapping SourceColumn="FixSubmitDate" DataSetColumn="FixSubmitDate" />
+              <Mapping SourceColumn="FixResolution" DataSetColumn="FixResolution" />
+              <Mapping SourceColumn="FixAutomationLoop" DataSetColumn="FixAutomationLoop" />
+              <Mapping SourceColumn="FixBuildNumber" DataSetColumn="FixBuildNumber" />
+              <Mapping SourceColumn="FixTimeDays" DataSetColumn="FixTimeDays" />
+              <Mapping SourceColumn="FixChangeNumber" DataSetColumn="FixChangeNumber" />
+              <Mapping SourceColumn="FixNumber" DataSetColumn="FixNumber" />
+              <Mapping SourceColumn="FixVerifiedBuildNumber" DataSetColumn="FixVerifiedBuildNumber" />
+              <Mapping SourceColumn="FixVerificationTimeHours" DataSetColumn="FixVerificationTimeHours" />
+              <Mapping SourceColumn="FixVerificationNote" DataSetColumn="FixVerificationNote" />
+              <Mapping SourceColumn="FixLastModifierId" DataSetColumn="FixLastModifierId" />
+              <Mapping SourceColumn="FixLastModifierNm" DataSetColumn="FixLastModifierNm" />
+              <Mapping SourceColumn="FixLastModifiedDate" DataSetColumn="FixLastModifiedDate" />
+              <Mapping SourceColumn="TargetRelease" DataSetColumn="TargetRelease" />
+              <Mapping SourceColumn="Fixed" DataSetColumn="Fixed" />
+              <Mapping SourceColumn="Verified" DataSetColumn="Verified" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_LanguagesTableAdapter" GeneratorDataComponentClassName="OB_LanguagesTableAdapter" Name="OB_Languages" UserDataComponentName="OB_LanguagesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_Languages" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, Language FROM dbo.OB_Languages</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="Language" DataSetColumn="Language" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_PlatformsTableAdapter" GeneratorDataComponentClassName="OB_PlatformsTableAdapter" Name="OB_Platforms" UserDataComponentName="OB_PlatformsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_Platforms" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, Platform FROM dbo.OB_Platforms</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="Platform" DataSetColumn="Platform" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_TargetReleasesTableAdapter" GeneratorDataComponentClassName="OB_TargetReleasesTableAdapter" Name="OB_TargetReleases" UserDataComponentName="OB_TargetReleasesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_TargetReleases" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, TargetRelease FROM dbo.OB_TargetReleases</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="TargetRelease" DataSetColumn="TargetRelease" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_TargetReleasesGatewayTableAdapter" GeneratorDataComponentClassName="OB_TargetReleasesGatewayTableAdapter" Name="OB_TargetReleasesGateway" UserDataComponentName="OB_TargetReleasesGatewayTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_TargetReleasesGateway" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, TargetReleaseGateway FROM dbo.OB_TargetReleasesGateway</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="TargetReleaseGateway" DataSetColumn="TargetReleaseGateway" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_TargetReleasesPluralTableAdapter" GeneratorDataComponentClassName="OB_TargetReleasesPluralTableAdapter" Name="OB_TargetReleasesPlural" UserDataComponentName="OB_TargetReleasesPluralTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_TargetReleasesPlural" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, TargetReleasePlural FROM dbo.OB_TargetReleasesPlural</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="TargetReleasePlural" DataSetColumn="TargetReleasePlural" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OB_VerifiedIn_ReleasesTableAdapter" GeneratorDataComponentClassName="OB_VerifiedIn_ReleasesTableAdapter" Name="OB_VerifiedIn_Releases" UserDataComponentName="OB_VerifiedIn_ReleasesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.OB_VerifiedIn_Releases" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BUGID, ReleaseVerified FROM dbo.OB_VerifiedIn_Releases</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUGID" DataSetColumn="BUGID" />
+              <Mapping SourceColumn="ReleaseVerified" DataSetColumn="ReleaseVerified" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_backlogTableAdapter" GeneratorDataComponentClassName="sp_backlogTableAdapter" Name="sp_backlog" UserDataComponentName="sp_backlogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.sp_backlog" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_backlog</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="bugid" DataSetColumn="bugid" />
+              <Mapping SourceColumn="feature" DataSetColumn="feature" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="count" DataSetColumn="count" />
+              <Mapping SourceColumn="prior_state" DataSetColumn="prior_state" />
+              <Mapping SourceColumn="new_state" DataSetColumn="new_state" />
+              <Mapping SourceColumn="transition" DataSetColumn="transition" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_Jasper_Fixed_allTableAdapter" GeneratorDataComponentClassName="sp_Jasper_Fixed_allTableAdapter" Name="sp_Jasper_Fixed_all" UserDataComponentName="sp_Jasper_Fixed_allTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.sp_Jasper_Fixed_all" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_Jasper_Fixed_all</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BugID" DataSetColumn="BugID" />
+              <Mapping SourceColumn="Enter Fixed" DataSetColumn="Enter Fixed" />
+              <Mapping SourceColumn="Exit Fixed" DataSetColumn="Exit Fixed" />
+              <Mapping SourceColumn="Submitter" DataSetColumn="Submitter" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_Jasper_InfoTableAdapter" GeneratorDataComponentClassName="sp_Jasper_InfoTableAdapter" Name="sp_Jasper_Info" UserDataComponentName="sp_Jasper_InfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.sp_Jasper_Info" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_Jasper_Info</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BugID" DataSetColumn="BugID" />
+              <Mapping SourceColumn="Enter Waiting for Info" DataSetColumn="Enter Waiting for Info" />
+              <Mapping SourceColumn="Exit Waiting for Info" DataSetColumn="Exit Waiting for Info" />
+              <Mapping SourceColumn="Submitter" DataSetColumn="Submitter" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_Jasper_Info_allTableAdapter" GeneratorDataComponentClassName="sp_Jasper_Info_allTableAdapter" Name="sp_Jasper_Info_all" UserDataComponentName="sp_Jasper_Info_allTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OneBugDatamartConnectionString (Settings)" DbObjectName="OneBugDatamart.dbo.sp_Jasper_Info_all" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_Jasper_Info_all</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BugID" DataSetColumn="BugID" />
+              <Mapping SourceColumn="Enter Waiting for Info" DataSetColumn="Enter Waiting for Info" />
+              <Mapping SourceColumn="Exit Waiting for Info" DataSetColumn="Exit Waiting for Info" />
+              <Mapping SourceColumn="Submitter" DataSetColumn="Submitter" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OneBugDatamartDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OneBugDatamartDataSet" msprop:Generator_UserDSName="OneBugDatamartDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OB_Associated_Releases" msprop:Generator_TableClassName="OB_Associated_ReleasesDataTable" msprop:Generator_TableVarName="tableOB_Associated_Releases" msprop:Generator_TablePropName="OB_Associated_Releases" msprop:Generator_RowDeletingName="OB_Associated_ReleasesRowDeleting" msprop:Generator_UserTableName="OB_Associated_Releases" msprop:Generator_RowChangingName="OB_Associated_ReleasesRowChanging" msprop:Generator_RowEvHandlerName="OB_Associated_ReleasesRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_Associated_ReleasesRowDeleted" msprop:Generator_RowEvArgName="OB_Associated_ReleasesRowChangeEvent" msprop:Generator_RowChangedName="OB_Associated_ReleasesRowChanged" msprop:Generator_RowClassName="OB_Associated_ReleasesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="ReleaseAssociated" msprop:Generator_ColumnVarNameInTable="columnReleaseAssociated" msprop:Generator_ColumnPropNameInRow="ReleaseAssociated" msprop:Generator_ColumnPropNameInTable="ReleaseAssociatedColumn" msprop:Generator_UserColumnName="ReleaseAssociated" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_Bugs" msprop:Generator_TableClassName="OB_BugsDataTable" msprop:Generator_TableVarName="tableOB_Bugs" msprop:Generator_TablePropName="OB_Bugs" msprop:Generator_RowDeletingName="OB_BugsRowDeleting" msprop:Generator_UserTableName="OB_Bugs" msprop:Generator_RowChangingName="OB_BugsRowChanging" msprop:Generator_RowEvHandlerName="OB_BugsRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_BugsRowDeleted" msprop:Generator_RowEvArgName="OB_BugsRowChangeEvent" msprop:Generator_RowChangedName="OB_BugsRowChanged" msprop:Generator_RowClassName="OB_BugsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="510" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tags" msprop:Generator_ColumnVarNameInTable="columnTags" msprop:Generator_ColumnPropNameInRow="Tags" msprop:Generator_ColumnPropNameInTable="TagsColumn" msprop:Generator_UserColumnName="Tags" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="510" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ThirdLevelInc" msprop:Generator_ColumnVarNameInTable="columnThirdLevelInc" msprop:Generator_ColumnPropNameInRow="ThirdLevelInc" msprop:Generator_ColumnPropNameInTable="ThirdLevelIncColumn" msprop:Generator_UserColumnName="ThirdLevelInc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Project" msprop:Generator_ColumnVarNameInTable="columnProject" msprop:Generator_ColumnPropNameInRow="Project" msprop:Generator_ColumnPropNameInTable="ProjectColumn" msprop:Generator_UserColumnName="Project" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product" msprop:Generator_ColumnVarNameInTable="columnProduct" msprop:Generator_ColumnPropNameInRow="Product" msprop:Generator_ColumnPropNameInTable="ProductColumn" msprop:Generator_UserColumnName="Product" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FoundInRelease" msprop:Generator_ColumnVarNameInTable="columnFoundInRelease" msprop:Generator_ColumnPropNameInRow="FoundInRelease" msprop:Generator_ColumnPropNameInTable="FoundInReleaseColumn" msprop:Generator_UserColumnName="FoundInRelease" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TargetRelease" msprop:Generator_ColumnVarNameInTable="columnTargetRelease" msprop:Generator_ColumnPropNameInRow="TargetRelease" msprop:Generator_ColumnPropNameInTable="TargetReleaseColumn" msprop:Generator_UserColumnName="TargetRelease" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TargetReleaseSingular" msprop:Generator_ColumnVarNameInTable="columnTargetReleaseSingular" msprop:Generator_ColumnPropNameInRow="TargetReleaseSingular" msprop:Generator_ColumnPropNameInTable="TargetReleaseSingularColumn" msprop:Generator_UserColumnName="TargetReleaseSingular" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TargetReleaseGateway" msprop:Generator_ColumnVarNameInTable="columnTargetReleaseGateway" msprop:Generator_ColumnPropNameInRow="TargetReleaseGateway" msprop:Generator_ColumnPropNameInTable="TargetReleaseGatewayColumn" msprop:Generator_UserColumnName="TargetReleaseGateway" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TargetReleasePlural" msprop:Generator_ColumnVarNameInTable="columnTargetReleasePlural" msprop:Generator_ColumnPropNameInRow="TargetReleasePlural" msprop:Generator_ColumnPropNameInTable="TargetReleasePluralColumn" msprop:Generator_UserColumnName="TargetReleasePlural" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Feature" msprop:Generator_ColumnVarNameInTable="columnFeature" msprop:Generator_ColumnPropNameInRow="Feature" msprop:Generator_ColumnPropNameInTable="FeatureColumn" msprop:Generator_UserColumnName="Feature" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Component" msprop:Generator_ColumnVarNameInTable="columnComponent" msprop:Generator_ColumnPropNameInRow="Component" msprop:Generator_ColumnPropNameInTable="ComponentColumn" msprop:Generator_UserColumnName="Component" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BuildNumber" msprop:Generator_ColumnVarNameInTable="columnBuildNumber" msprop:Generator_ColumnPropNameInRow="BuildNumber" msprop:Generator_ColumnPropNameInTable="BuildNumberColumn" msprop:Generator_UserColumnName="BuildNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubStatus" msprop:Generator_ColumnVarNameInTable="columnSubStatus" msprop:Generator_ColumnPropNameInRow="SubStatus" msprop:Generator_ColumnPropNameInTable="SubStatusColumn" msprop:Generator_UserColumnName="SubStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" msprop:Generator_UserColumnName="Priority" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Severity" msprop:Generator_ColumnVarNameInTable="columnSeverity" msprop:Generator_ColumnPropNameInRow="Severity" msprop:Generator_ColumnPropNameInTable="SeverityColumn" msprop:Generator_UserColumnName="Severity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Likelihood" msprop:Generator_ColumnVarNameInTable="columnLikelihood" msprop:Generator_ColumnPropNameInRow="Likelihood" msprop:Generator_ColumnPropNameInTable="LikelihoodColumn" msprop:Generator_UserColumnName="Likelihood" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Regression" msprop:Generator_ColumnVarNameInTable="columnRegression" msprop:Generator_ColumnPropNameInRow="Regression" msprop:Generator_ColumnPropNameInTable="RegressionColumn" msprop:Generator_UserColumnName="Regression" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegressionType" msprop:Generator_ColumnVarNameInTable="columnRegressionType" msprop:Generator_ColumnPropNameInRow="RegressionType" msprop:Generator_ColumnPropNameInTable="RegressionTypeColumn" msprop:Generator_UserColumnName="RegressionType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DefectOrigin" msprop:Generator_ColumnVarNameInTable="columnDefectOrigin" msprop:Generator_ColumnPropNameInRow="DefectOrigin" msprop:Generator_ColumnPropNameInTable="DefectOriginColumn" msprop:Generator_UserColumnName="DefectOrigin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DefectType" msprop:Generator_ColumnVarNameInTable="columnDefectType" msprop:Generator_ColumnPropNameInRow="DefectType" msprop:Generator_ColumnPropNameInTable="DefectTypeColumn" msprop:Generator_UserColumnName="DefectType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Blocking" msprop:Generator_ColumnVarNameInTable="columnBlocking" msprop:Generator_ColumnPropNameInRow="Blocking" msprop:Generator_ColumnPropNameInTable="BlockingColumn" msprop:Generator_UserColumnName="Blocking" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reproducibility" msprop:Generator_ColumnVarNameInTable="columnReproducibility" msprop:Generator_ColumnPropNameInRow="Reproducibility" msprop:Generator_ColumnPropNameInTable="ReproducibilityColumn" msprop:Generator_UserColumnName="Reproducibility" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecurityCriticality" msprop:Generator_ColumnVarNameInTable="columnSecurityCriticality" msprop:Generator_ColumnPropNameInRow="SecurityCriticality" msprop:Generator_ColumnPropNameInTable="SecurityCriticalityColumn" msprop:Generator_UserColumnName="SecurityCriticality" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActionItem" msprop:Generator_ColumnVarNameInTable="columnActionItem" msprop:Generator_ColumnPropNameInRow="ActionItem" msprop:Generator_ColumnPropNameInTable="ActionItemColumn" msprop:Generator_UserColumnName="ActionItem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" msprop:Generator_UserColumnName="Customer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GatewayType" msprop:Generator_ColumnVarNameInTable="columnGatewayType" msprop:Generator_ColumnPropNameInRow="GatewayType" msprop:Generator_ColumnPropNameInTable="GatewayTypeColumn" msprop:Generator_UserColumnName="GatewayType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubmitterId" msprop:Generator_ColumnVarNameInTable="columnSubmitterId" msprop:Generator_ColumnPropNameInRow="SubmitterId" msprop:Generator_ColumnPropNameInTable="SubmitterIdColumn" msprop:Generator_UserColumnName="SubmitterId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubmitterNm" msprop:Generator_ColumnVarNameInTable="columnSubmitterNm" msprop:Generator_ColumnPropNameInRow="SubmitterNm" msprop:Generator_ColumnPropNameInTable="SubmitterNmColumn" msprop:Generator_UserColumnName="SubmitterNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OwnerId" msprop:Generator_ColumnVarNameInTable="columnOwnerId" msprop:Generator_ColumnPropNameInRow="OwnerId" msprop:Generator_ColumnPropNameInTable="OwnerIdColumn" msprop:Generator_UserColumnName="OwnerId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OwnerNm" msprop:Generator_ColumnVarNameInTable="columnOwnerNm" msprop:Generator_ColumnPropNameInRow="OwnerNm" msprop:Generator_ColumnPropNameInTable="OwnerNmColumn" msprop:Generator_UserColumnName="OwnerNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModifierId" msprop:Generator_ColumnVarNameInTable="columnLastModifierId" msprop:Generator_ColumnPropNameInRow="LastModifierId" msprop:Generator_ColumnPropNameInTable="LastModifierIdColumn" msprop:Generator_UserColumnName="LastModifierId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModifierNm" msprop:Generator_ColumnVarNameInTable="columnLastModifierNm" msprop:Generator_ColumnPropNameInRow="LastModifierNm" msprop:Generator_ColumnPropNameInTable="LastModifierNmColumn" msprop:Generator_UserColumnName="LastModifierNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FeatureLeadId" msprop:Generator_ColumnVarNameInTable="columnFeatureLeadId" msprop:Generator_ColumnPropNameInRow="FeatureLeadId" msprop:Generator_ColumnPropNameInTable="FeatureLeadIdColumn" msprop:Generator_UserColumnName="FeatureLeadId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastStateChangeDate" msprop:Generator_ColumnVarNameInTable="columnLastStateChangeDate" msprop:Generator_ColumnPropNameInRow="LastStateChangeDate" msprop:Generator_ColumnPropNameInTable="LastStateChangeDateColumn" msprop:Generator_UserColumnName="LastStateChangeDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FeatureLeadNm" msprop:Generator_ColumnVarNameInTable="columnFeatureLeadNm" msprop:Generator_ColumnPropNameInRow="FeatureLeadNm" msprop:Generator_ColumnPropNameInTable="FeatureLeadNmColumn" msprop:Generator_UserColumnName="FeatureLeadNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComponentLeadId" msprop:Generator_ColumnVarNameInTable="columnComponentLeadId" msprop:Generator_ColumnPropNameInRow="ComponentLeadId" msprop:Generator_ColumnPropNameInTable="ComponentLeadIdColumn" msprop:Generator_UserColumnName="ComponentLeadId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComponentLeadNm" msprop:Generator_ColumnVarNameInTable="columnComponentLeadNm" msprop:Generator_ColumnPropNameInRow="ComponentLeadNm" msprop:Generator_ColumnPropNameInTable="ComponentLeadNmColumn" msprop:Generator_UserColumnName="ComponentLeadNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DevLeadId" msprop:Generator_ColumnVarNameInTable="columnDevLeadId" msprop:Generator_ColumnPropNameInRow="DevLeadId" msprop:Generator_ColumnPropNameInTable="DevLeadIdColumn" msprop:Generator_UserColumnName="DevLeadId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DevLeadNm" msprop:Generator_ColumnVarNameInTable="columnDevLeadNm" msprop:Generator_ColumnPropNameInRow="DevLeadNm" msprop:Generator_ColumnPropNameInTable="DevLeadNmColumn" msprop:Generator_UserColumnName="DevLeadNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TestLeadId" msprop:Generator_ColumnVarNameInTable="columnTestLeadId" msprop:Generator_ColumnPropNameInRow="TestLeadId" msprop:Generator_ColumnPropNameInTable="TestLeadIdColumn" msprop:Generator_UserColumnName="TestLeadId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TestLeadNm" msprop:Generator_ColumnVarNameInTable="columnTestLeadNm" msprop:Generator_ColumnPropNameInRow="TestLeadNm" msprop:Generator_ColumnPropNameInTable="TestLeadNmColumn" msprop:Generator_UserColumnName="TestLeadNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeveloperId" msprop:Generator_ColumnVarNameInTable="columnDeveloperId" msprop:Generator_ColumnPropNameInRow="DeveloperId" msprop:Generator_ColumnPropNameInTable="DeveloperIdColumn" msprop:Generator_UserColumnName="DeveloperId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeveloperNm" msprop:Generator_ColumnVarNameInTable="columnDeveloperNm" msprop:Generator_ColumnPropNameInRow="DeveloperNm" msprop:Generator_ColumnPropNameInTable="DeveloperNmColumn" msprop:Generator_UserColumnName="DeveloperNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VerifierId" msprop:Generator_ColumnVarNameInTable="columnVerifierId" msprop:Generator_ColumnPropNameInRow="VerifierId" msprop:Generator_ColumnPropNameInTable="VerifierIdColumn" msprop:Generator_UserColumnName="VerifierId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VerifierNm" msprop:Generator_ColumnVarNameInTable="columnVerifierNm" msprop:Generator_ColumnPropNameInRow="VerifierNm" msprop:Generator_ColumnPropNameInTable="VerifierNmColumn" msprop:Generator_UserColumnName="VerifierNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastVerifiedById" msprop:Generator_ColumnVarNameInTable="columnLastVerifiedById" msprop:Generator_ColumnPropNameInRow="LastVerifiedById" msprop:Generator_ColumnPropNameInTable="LastVerifiedByIdColumn" msprop:Generator_UserColumnName="LastVerifiedById" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastVerifiedByNm" msprop:Generator_ColumnVarNameInTable="columnLastVerifiedByNm" msprop:Generator_ColumnPropNameInRow="LastVerifiedByNm" msprop:Generator_ColumnPropNameInTable="LastVerifiedByNmColumn" msprop:Generator_UserColumnName="LastVerifiedByNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstFixComplexity" msprop:Generator_ColumnVarNameInTable="columnEstFixComplexity" msprop:Generator_ColumnPropNameInRow="EstFixComplexity" msprop:Generator_ColumnPropNameInTable="EstFixComplexityColumn" msprop:Generator_UserColumnName="EstFixComplexity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubmitDate" msprop:Generator_ColumnVarNameInTable="columnSubmitDate" msprop:Generator_ColumnPropNameInRow="SubmitDate" msprop:Generator_ColumnPropNameInTable="SubmitDateColumn" msprop:Generator_UserColumnName="SubmitDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastModifiedDate" msprop:Generator_ColumnVarNameInTable="columnLastModifiedDate" msprop:Generator_ColumnPropNameInRow="LastModifiedDate" msprop:Generator_ColumnPropNameInTable="LastModifiedDateColumn" msprop:Generator_UserColumnName="LastModifiedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FixDate" msprop:Generator_ColumnVarNameInTable="columnFixDate" msprop:Generator_ColumnPropNameInRow="FixDate" msprop:Generator_ColumnPropNameInTable="FixDateColumn" msprop:Generator_UserColumnName="FixDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastVerifiedDate" msprop:Generator_ColumnVarNameInTable="columnLastVerifiedDate" msprop:Generator_ColumnPropNameInRow="LastVerifiedDate" msprop:Generator_ColumnPropNameInTable="LastVerifiedDateColumn" msprop:Generator_UserColumnName="LastVerifiedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TestCases" msprop:Generator_ColumnVarNameInTable="columnTestCases" msprop:Generator_ColumnPropNameInRow="TestCases" msprop:Generator_ColumnPropNameInTable="TestCasesColumn" msprop:Generator_UserColumnName="TestCases" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="510" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TestScenarios" msprop:Generator_ColumnVarNameInTable="columnTestScenarios" msprop:Generator_ColumnPropNameInRow="TestScenarios" msprop:Generator_ColumnPropNameInTable="TestScenariosColumn" msprop:Generator_UserColumnName="TestScenarios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="510" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OriginalSystem" msprop:Generator_ColumnVarNameInTable="columnOriginalSystem" msprop:Generator_ColumnPropNameInRow="OriginalSystem" msprop:Generator_ColumnPropNameInTable="OriginalSystemColumn" msprop:Generator_UserColumnName="OriginalSystem" type="xs:int" minOccurs="0" />
+              <xs:element name="OriginalID" msprop:Generator_ColumnVarNameInTable="columnOriginalID" msprop:Generator_ColumnPropNameInRow="OriginalID" msprop:Generator_ColumnPropNameInTable="OriginalIDColumn" msprop:Generator_UserColumnName="OriginalID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRMID" msprop:Generator_ColumnVarNameInTable="columnCRMID" msprop:Generator_ColumnPropNameInRow="CRMID" msprop:Generator_ColumnPropNameInTable="CRMIDColumn" msprop:Generator_UserColumnName="CRMID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BuildType" msprop:Generator_ColumnVarNameInTable="columnBuildType" msprop:Generator_ColumnPropNameInRow="BuildType" msprop:Generator_ColumnPropNameInTable="BuildTypeColumn" msprop:Generator_UserColumnName="BuildType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerCommitment" msprop:Generator_ColumnVarNameInTable="columnCustomerCommitment" msprop:Generator_ColumnPropNameInRow="CustomerCommitment" msprop:Generator_ColumnPropNameInTable="CustomerCommitmentColumn" msprop:Generator_UserColumnName="CustomerCommitment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstimatedFixDate" msprop:Generator_ColumnVarNameInTable="columnEstimatedFixDate" msprop:Generator_ColumnPropNameInRow="EstimatedFixDate" msprop:Generator_ColumnPropNameInTable="EstimatedFixDateColumn" msprop:Generator_UserColumnName="EstimatedFixDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstimatedTimeToFix" msprop:Generator_ColumnVarNameInTable="columnEstimatedTimeToFix" msprop:Generator_ColumnPropNameInRow="EstimatedTimeToFix" msprop:Generator_ColumnPropNameInTable="EstimatedTimeToFixColumn" msprop:Generator_UserColumnName="EstimatedTimeToFix" type="xs:double" minOccurs="0" />
+              <xs:element name="LastWorkingBuild" msprop:Generator_ColumnVarNameInTable="columnLastWorkingBuild" msprop:Generator_ColumnPropNameInRow="LastWorkingBuild" msprop:Generator_ColumnPropNameInTable="LastWorkingBuildColumn" msprop:Generator_UserColumnName="LastWorkingBuild" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RevenueValue" msprop:Generator_ColumnVarNameInTable="columnRevenueValue" msprop:Generator_ColumnPropNameInRow="RevenueValue" msprop:Generator_ColumnPropNameInTable="RevenueValueColumn" msprop:Generator_UserColumnName="RevenueValue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RootCauseID" msprop:Generator_ColumnVarNameInTable="columnRootCauseID" msprop:Generator_ColumnPropNameInRow="RootCauseID" msprop:Generator_ColumnPropNameInTable="RootCauseIDColumn" msprop:Generator_UserColumnName="RootCauseID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActiveInactive" msprop:Generator_ColumnVarNameInTable="columnActiveInactive" msprop:Generator_ColumnPropNameInRow="ActiveInactive" msprop:Generator_ColumnPropNameInTable="ActiveInactiveColumn" msprop:Generator_UserColumnName="ActiveInactive" type="xs:int" minOccurs="0" />
+              <xs:element name="CommittedDate" msprop:Generator_ColumnVarNameInTable="columnCommittedDate" msprop:Generator_ColumnPropNameInRow="CommittedDate" msprop:Generator_ColumnPropNameInTable="CommittedDateColumn" msprop:Generator_UserColumnName="CommittedDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegressionBuildNum" msprop:Generator_ColumnVarNameInTable="columnRegressionBuildNum" msprop:Generator_ColumnPropNameInRow="RegressionBuildNum" msprop:Generator_ColumnPropNameInTable="RegressionBuildNumColumn" msprop:Generator_UserColumnName="RegressionBuildNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SLProject" msprop:Generator_ColumnVarNameInTable="columnSLProject" msprop:Generator_ColumnPropNameInRow="SLProject" msprop:Generator_ColumnPropNameInTable="SLProjectColumn" msprop:Generator_UserColumnName="SLProject" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BetaKnownIssue" msprop:Generator_ColumnVarNameInTable="columnBetaKnownIssue" msprop:Generator_ColumnPropNameInRow="BetaKnownIssue" msprop:Generator_ColumnPropNameInTable="BetaKnownIssueColumn" msprop:Generator_UserColumnName="BetaKnownIssue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RTMKnownIssue" msprop:Generator_ColumnVarNameInTable="columnRTMKnownIssue" msprop:Generator_ColumnPropNameInRow="RTMKnownIssue" msprop:Generator_ColumnPropNameInTable="RTMKnownIssueColumn" msprop:Generator_UserColumnName="RTMKnownIssue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PubsContact" msprop:Generator_ColumnVarNameInTable="columnPubsContact" msprop:Generator_ColumnPropNameInRow="PubsContact" msprop:Generator_ColumnPropNameInTable="PubsContactColumn" msprop:Generator_UserColumnName="PubsContact" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumberOfServers" msprop:Generator_ColumnVarNameInTable="columnNumberOfServers" msprop:Generator_ColumnPropNameInRow="NumberOfServers" msprop:Generator_ColumnPropNameInTable="NumberOfServersColumn" msprop:Generator_UserColumnName="NumberOfServers" type="xs:int" minOccurs="0" />
+              <xs:element name="SubComponent" msprop:Generator_ColumnVarNameInTable="columnSubComponent" msprop:Generator_ColumnPropNameInRow="SubComponent" msprop:Generator_ColumnPropNameInTable="SubComponentColumn" msprop:Generator_UserColumnName="SubComponent" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IssuetypePrefix" msprop:Generator_ColumnVarNameInTable="columnIssuetypePrefix" msprop:Generator_ColumnPropNameInRow="IssuetypePrefix" msprop:Generator_ColumnPropNameInTable="IssuetypePrefixColumn" msprop:Generator_UserColumnName="IssuetypePrefix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReleaseFixed" msprop:Generator_ColumnVarNameInTable="columnReleaseFixed" msprop:Generator_ColumnPropNameInRow="ReleaseFixed" msprop:Generator_ColumnPropNameInTable="ReleaseFixedColumn" msprop:Generator_UserColumnName="ReleaseFixed" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReleaseVerified" msprop:Generator_ColumnVarNameInTable="columnReleaseVerified" msprop:Generator_ColumnPropNameInRow="ReleaseVerified" msprop:Generator_ColumnPropNameInTable="ReleaseVerifiedColumn" msprop:Generator_UserColumnName="ReleaseVerified" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReleaseAssociated" msprop:Generator_ColumnVarNameInTable="columnReleaseAssociated" msprop:Generator_ColumnPropNameInRow="ReleaseAssociated" msprop:Generator_ColumnPropNameInTable="ReleaseAssociatedColumn" msprop:Generator_UserColumnName="ReleaseAssociated" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Language" msprop:Generator_ColumnVarNameInTable="columnLanguage" msprop:Generator_ColumnPropNameInRow="Language" msprop:Generator_ColumnPropNameInTable="LanguageColumn" msprop:Generator_UserColumnName="Language" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Platform" msprop:Generator_ColumnVarNameInTable="columnPlatform" msprop:Generator_ColumnPropNameInRow="Platform" msprop:Generator_ColumnPropNameInTable="PlatformColumn" msprop:Generator_UserColumnName="Platform" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IssueType" msprop:Generator_ColumnVarNameInTable="columnIssueType" msprop:Generator_ColumnPropNameInRow="IssueType" msprop:Generator_ColumnPropNameInTable="IssueTypeColumn" msprop:Generator_UserColumnName="IssueType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MigrationInfo" msprop:Generator_ColumnVarNameInTable="columnMigrationInfo" msprop:Generator_ColumnPropNameInRow="MigrationInfo" msprop:Generator_ColumnPropNameInTable="MigrationInfoColumn" msprop:Generator_UserColumnName="MigrationInfo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_ChangeActions" msprop:Generator_TableClassName="OB_ChangeActionsDataTable" msprop:Generator_TableVarName="tableOB_ChangeActions" msprop:Generator_TablePropName="OB_ChangeActions" msprop:Generator_RowDeletingName="OB_ChangeActionsRowDeleting" msprop:Generator_UserTableName="OB_ChangeActions" msprop:Generator_RowChangingName="OB_ChangeActionsRowChanging" msprop:Generator_RowEvHandlerName="OB_ChangeActionsRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_ChangeActionsRowDeleted" msprop:Generator_RowEvArgName="OB_ChangeActionsRowChangeEvent" msprop:Generator_RowChangedName="OB_ChangeActionsRowChanged" msprop:Generator_RowClassName="OB_ChangeActionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHACTID" msprop:Generator_ColumnVarNameInTable="columnCHACTID" msprop:Generator_ColumnPropNameInRow="CHACTID" msprop:Generator_ColumnPropNameInTable="CHACTIDColumn" msprop:Generator_UserColumnName="CHACTID" type="xs:int" />
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" type="xs:int" minOccurs="0" />
+              <xs:element name="ChangerId" msprop:Generator_ColumnVarNameInTable="columnChangerId" msprop:Generator_ColumnPropNameInRow="ChangerId" msprop:Generator_ColumnPropNameInTable="ChangerIdColumn" msprop:Generator_UserColumnName="ChangerId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChangerNm" msprop:Generator_ColumnVarNameInTable="columnChangerNm" msprop:Generator_ColumnPropNameInRow="ChangerNm" msprop:Generator_ColumnPropNameInTable="ChangerNmColumn" msprop:Generator_UserColumnName="ChangerNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActionId" msprop:Generator_ColumnVarNameInTable="columnActionId" msprop:Generator_ColumnPropNameInRow="ActionId" msprop:Generator_ColumnPropNameInTable="ActionIdColumn" msprop:Generator_UserColumnName="ActionId" type="xs:int" minOccurs="0" />
+              <xs:element name="ActionNm" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnActionNm" msprop:Generator_ColumnPropNameInRow="ActionNm" msprop:Generator_ColumnPropNameInTable="ActionNmColumn" msprop:Generator_UserColumnName="ActionNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="17" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriorOwnerId" msprop:Generator_ColumnVarNameInTable="columnPriorOwnerId" msprop:Generator_ColumnPropNameInRow="PriorOwnerId" msprop:Generator_ColumnPropNameInTable="PriorOwnerIdColumn" msprop:Generator_UserColumnName="PriorOwnerId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriorOwnerNm" msprop:Generator_ColumnVarNameInTable="columnPriorOwnerNm" msprop:Generator_ColumnPropNameInRow="PriorOwnerNm" msprop:Generator_ColumnPropNameInTable="PriorOwnerNmColumn" msprop:Generator_UserColumnName="PriorOwnerNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriorState" msprop:Generator_ColumnVarNameInTable="columnPriorState" msprop:Generator_ColumnPropNameInRow="PriorState" msprop:Generator_ColumnPropNameInTable="PriorStateColumn" msprop:Generator_UserColumnName="PriorState" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transition" msprop:Generator_ColumnVarNameInTable="columnTransition" msprop:Generator_ColumnPropNameInRow="Transition" msprop:Generator_ColumnPropNameInTable="TransitionColumn" msprop:Generator_UserColumnName="Transition" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewState" msprop:Generator_ColumnVarNameInTable="columnNewState" msprop:Generator_ColumnPropNameInRow="NewState" msprop:Generator_ColumnPropNameInTable="NewStateColumn" msprop:Generator_UserColumnName="NewState" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewOwnerId" msprop:Generator_ColumnVarNameInTable="columnNewOwnerId" msprop:Generator_ColumnPropNameInRow="NewOwnerId" msprop:Generator_ColumnPropNameInTable="NewOwnerIdColumn" msprop:Generator_UserColumnName="NewOwnerId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewOwnerNm" msprop:Generator_ColumnVarNameInTable="columnNewOwnerNm" msprop:Generator_ColumnPropNameInRow="NewOwnerNm" msprop:Generator_ColumnPropNameInTable="NewOwnerNmColumn" msprop:Generator_UserColumnName="NewOwnerNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_FixedIn_Releases" msprop:Generator_TableClassName="OB_FixedIn_ReleasesDataTable" msprop:Generator_TableVarName="tableOB_FixedIn_Releases" msprop:Generator_TablePropName="OB_FixedIn_Releases" msprop:Generator_RowDeletingName="OB_FixedIn_ReleasesRowDeleting" msprop:Generator_UserTableName="OB_FixedIn_Releases" msprop:Generator_RowChangingName="OB_FixedIn_ReleasesRowChanging" msprop:Generator_RowEvHandlerName="OB_FixedIn_ReleasesRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_FixedIn_ReleasesRowDeleted" msprop:Generator_RowEvArgName="OB_FixedIn_ReleasesRowChangeEvent" msprop:Generator_RowChangedName="OB_FixedIn_ReleasesRowChanged" msprop:Generator_RowClassName="OB_FixedIn_ReleasesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="ReleaseFixed" msprop:Generator_ColumnVarNameInTable="columnReleaseFixed" msprop:Generator_ColumnPropNameInRow="ReleaseFixed" msprop:Generator_ColumnPropNameInTable="ReleaseFixedColumn" msprop:Generator_UserColumnName="ReleaseFixed" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_Fixes" msprop:Generator_TableClassName="OB_FixesDataTable" msprop:Generator_TableVarName="tableOB_Fixes" msprop:Generator_TablePropName="OB_Fixes" msprop:Generator_RowDeletingName="OB_FixesRowDeleting" msprop:Generator_UserTableName="OB_Fixes" msprop:Generator_RowChangingName="OB_FixesRowChanging" msprop:Generator_RowEvHandlerName="OB_FixesRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_FixesRowDeleted" msprop:Generator_RowEvArgName="OB_FixesRowChangeEvent" msprop:Generator_RowChangedName="OB_FixesRowChanged" msprop:Generator_RowClassName="OB_FixesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FIXID" msprop:Generator_ColumnVarNameInTable="columnFIXID" msprop:Generator_ColumnPropNameInRow="FIXID" msprop:Generator_ColumnPropNameInTable="FIXIDColumn" msprop:Generator_UserColumnName="FIXID" type="xs:int" />
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" minOccurs="0" />
+              <xs:element name="FixTitle" msprop:Generator_ColumnVarNameInTable="columnFixTitle" msprop:Generator_ColumnPropNameInRow="FixTitle" msprop:Generator_ColumnPropNameInTable="FixTitleColumn" msprop:Generator_UserColumnName="FixTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="510" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixDescription" msprop:Generator_ColumnVarNameInTable="columnFixDescription" msprop:Generator_ColumnPropNameInRow="FixDescription" msprop:Generator_ColumnPropNameInTable="FixDescriptionColumn" msprop:Generator_UserColumnName="FixDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixVerificationInstructions" msprop:Generator_ColumnVarNameInTable="columnFixVerificationInstructions" msprop:Generator_ColumnPropNameInRow="FixVerificationInstructions" msprop:Generator_ColumnPropNameInTable="FixVerificationInstructionsColumn" msprop:Generator_UserColumnName="FixVerificationInstructions" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixSubmitterId" msprop:Generator_ColumnVarNameInTable="columnFixSubmitterId" msprop:Generator_ColumnPropNameInRow="FixSubmitterId" msprop:Generator_ColumnPropNameInTable="FixSubmitterIdColumn" msprop:Generator_UserColumnName="FixSubmitterId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixSubmitterNm" msprop:Generator_ColumnVarNameInTable="columnFixSubmitterNm" msprop:Generator_ColumnPropNameInRow="FixSubmitterNm" msprop:Generator_ColumnPropNameInTable="FixSubmitterNmColumn" msprop:Generator_UserColumnName="FixSubmitterNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixSubmitDate" msprop:Generator_ColumnVarNameInTable="columnFixSubmitDate" msprop:Generator_ColumnPropNameInRow="FixSubmitDate" msprop:Generator_ColumnPropNameInTable="FixSubmitDateColumn" msprop:Generator_UserColumnName="FixSubmitDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FixResolution" msprop:Generator_ColumnVarNameInTable="columnFixResolution" msprop:Generator_ColumnPropNameInRow="FixResolution" msprop:Generator_ColumnPropNameInTable="FixResolutionColumn" msprop:Generator_UserColumnName="FixResolution" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixAutomationLoop" msprop:Generator_ColumnVarNameInTable="columnFixAutomationLoop" msprop:Generator_ColumnPropNameInRow="FixAutomationLoop" msprop:Generator_ColumnPropNameInTable="FixAutomationLoopColumn" msprop:Generator_UserColumnName="FixAutomationLoop" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixBuildNumber" msprop:Generator_ColumnVarNameInTable="columnFixBuildNumber" msprop:Generator_ColumnPropNameInRow="FixBuildNumber" msprop:Generator_ColumnPropNameInTable="FixBuildNumberColumn" msprop:Generator_UserColumnName="FixBuildNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixTimeDays" msprop:Generator_ColumnVarNameInTable="columnFixTimeDays" msprop:Generator_ColumnPropNameInRow="FixTimeDays" msprop:Generator_ColumnPropNameInTable="FixTimeDaysColumn" msprop:Generator_UserColumnName="FixTimeDays" type="xs:double" minOccurs="0" />
+              <xs:element name="FixChangeNumber" msprop:Generator_ColumnVarNameInTable="columnFixChangeNumber" msprop:Generator_ColumnPropNameInRow="FixChangeNumber" msprop:Generator_ColumnPropNameInTable="FixChangeNumberColumn" msprop:Generator_UserColumnName="FixChangeNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="510" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixNumber" msprop:Generator_ColumnVarNameInTable="columnFixNumber" msprop:Generator_ColumnPropNameInRow="FixNumber" msprop:Generator_ColumnPropNameInTable="FixNumberColumn" msprop:Generator_UserColumnName="FixNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixVerifiedBuildNumber" msprop:Generator_ColumnVarNameInTable="columnFixVerifiedBuildNumber" msprop:Generator_ColumnPropNameInRow="FixVerifiedBuildNumber" msprop:Generator_ColumnPropNameInTable="FixVerifiedBuildNumberColumn" msprop:Generator_UserColumnName="FixVerifiedBuildNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixVerificationTimeHours" msprop:Generator_ColumnVarNameInTable="columnFixVerificationTimeHours" msprop:Generator_ColumnPropNameInRow="FixVerificationTimeHours" msprop:Generator_ColumnPropNameInTable="FixVerificationTimeHoursColumn" msprop:Generator_UserColumnName="FixVerificationTimeHours" type="xs:double" minOccurs="0" />
+              <xs:element name="FixVerificationNote" msprop:Generator_ColumnVarNameInTable="columnFixVerificationNote" msprop:Generator_ColumnPropNameInRow="FixVerificationNote" msprop:Generator_ColumnPropNameInTable="FixVerificationNoteColumn" msprop:Generator_UserColumnName="FixVerificationNote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixLastModifierId" msprop:Generator_ColumnVarNameInTable="columnFixLastModifierId" msprop:Generator_ColumnPropNameInRow="FixLastModifierId" msprop:Generator_ColumnPropNameInTable="FixLastModifierIdColumn" msprop:Generator_UserColumnName="FixLastModifierId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixLastModifierNm" msprop:Generator_ColumnVarNameInTable="columnFixLastModifierNm" msprop:Generator_ColumnPropNameInRow="FixLastModifierNm" msprop:Generator_ColumnPropNameInTable="FixLastModifierNmColumn" msprop:Generator_UserColumnName="FixLastModifierNm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FixLastModifiedDate" msprop:Generator_ColumnVarNameInTable="columnFixLastModifiedDate" msprop:Generator_ColumnPropNameInRow="FixLastModifiedDate" msprop:Generator_ColumnPropNameInTable="FixLastModifiedDateColumn" msprop:Generator_UserColumnName="FixLastModifiedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TargetRelease" msprop:Generator_ColumnVarNameInTable="columnTargetRelease" msprop:Generator_ColumnPropNameInRow="TargetRelease" msprop:Generator_ColumnPropNameInTable="TargetReleaseColumn" msprop:Generator_UserColumnName="TargetRelease" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fixed" msprop:Generator_ColumnVarNameInTable="columnFixed" msprop:Generator_ColumnPropNameInRow="Fixed" msprop:Generator_ColumnPropNameInTable="FixedColumn" msprop:Generator_UserColumnName="Fixed" type="xs:int" minOccurs="0" />
+              <xs:element name="Verified" msprop:Generator_ColumnVarNameInTable="columnVerified" msprop:Generator_ColumnPropNameInRow="Verified" msprop:Generator_ColumnPropNameInTable="VerifiedColumn" msprop:Generator_UserColumnName="Verified" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_Languages" msprop:Generator_TableClassName="OB_LanguagesDataTable" msprop:Generator_TableVarName="tableOB_Languages" msprop:Generator_TablePropName="OB_Languages" msprop:Generator_RowDeletingName="OB_LanguagesRowDeleting" msprop:Generator_UserTableName="OB_Languages" msprop:Generator_RowChangingName="OB_LanguagesRowChanging" msprop:Generator_RowEvHandlerName="OB_LanguagesRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_LanguagesRowDeleted" msprop:Generator_RowEvArgName="OB_LanguagesRowChangeEvent" msprop:Generator_RowChangedName="OB_LanguagesRowChanged" msprop:Generator_RowClassName="OB_LanguagesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="Language" msprop:Generator_ColumnVarNameInTable="columnLanguage" msprop:Generator_ColumnPropNameInRow="Language" msprop:Generator_ColumnPropNameInTable="LanguageColumn" msprop:Generator_UserColumnName="Language" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_Platforms" msprop:Generator_TableClassName="OB_PlatformsDataTable" msprop:Generator_TableVarName="tableOB_Platforms" msprop:Generator_TablePropName="OB_Platforms" msprop:Generator_RowDeletingName="OB_PlatformsRowDeleting" msprop:Generator_UserTableName="OB_Platforms" msprop:Generator_RowChangingName="OB_PlatformsRowChanging" msprop:Generator_RowEvHandlerName="OB_PlatformsRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_PlatformsRowDeleted" msprop:Generator_RowEvArgName="OB_PlatformsRowChangeEvent" msprop:Generator_RowChangedName="OB_PlatformsRowChanged" msprop:Generator_RowClassName="OB_PlatformsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="Platform" msprop:Generator_ColumnVarNameInTable="columnPlatform" msprop:Generator_ColumnPropNameInRow="Platform" msprop:Generator_ColumnPropNameInTable="PlatformColumn" msprop:Generator_UserColumnName="Platform" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_TargetReleases" msprop:Generator_TableClassName="OB_TargetReleasesDataTable" msprop:Generator_TableVarName="tableOB_TargetReleases" msprop:Generator_TablePropName="OB_TargetReleases" msprop:Generator_RowDeletingName="OB_TargetReleasesRowDeleting" msprop:Generator_UserTableName="OB_TargetReleases" msprop:Generator_RowChangingName="OB_TargetReleasesRowChanging" msprop:Generator_RowEvHandlerName="OB_TargetReleasesRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_TargetReleasesRowDeleted" msprop:Generator_RowEvArgName="OB_TargetReleasesRowChangeEvent" msprop:Generator_RowChangedName="OB_TargetReleasesRowChanged" msprop:Generator_RowClassName="OB_TargetReleasesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="TargetRelease" msprop:Generator_ColumnVarNameInTable="columnTargetRelease" msprop:Generator_ColumnPropNameInRow="TargetRelease" msprop:Generator_ColumnPropNameInTable="TargetReleaseColumn" msprop:Generator_UserColumnName="TargetRelease" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_TargetReleasesGateway" msprop:Generator_TableClassName="OB_TargetReleasesGatewayDataTable" msprop:Generator_TableVarName="tableOB_TargetReleasesGateway" msprop:Generator_TablePropName="OB_TargetReleasesGateway" msprop:Generator_RowDeletingName="OB_TargetReleasesGatewayRowDeleting" msprop:Generator_UserTableName="OB_TargetReleasesGateway" msprop:Generator_RowChangingName="OB_TargetReleasesGatewayRowChanging" msprop:Generator_RowEvHandlerName="OB_TargetReleasesGatewayRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_TargetReleasesGatewayRowDeleted" msprop:Generator_RowEvArgName="OB_TargetReleasesGatewayRowChangeEvent" msprop:Generator_RowChangedName="OB_TargetReleasesGatewayRowChanged" msprop:Generator_RowClassName="OB_TargetReleasesGatewayRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="TargetReleaseGateway" msprop:Generator_ColumnVarNameInTable="columnTargetReleaseGateway" msprop:Generator_ColumnPropNameInRow="TargetReleaseGateway" msprop:Generator_ColumnPropNameInTable="TargetReleaseGatewayColumn" msprop:Generator_UserColumnName="TargetReleaseGateway" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_TargetReleasesPlural" msprop:Generator_TableClassName="OB_TargetReleasesPluralDataTable" msprop:Generator_TableVarName="tableOB_TargetReleasesPlural" msprop:Generator_TablePropName="OB_TargetReleasesPlural" msprop:Generator_RowDeletingName="OB_TargetReleasesPluralRowDeleting" msprop:Generator_UserTableName="OB_TargetReleasesPlural" msprop:Generator_RowChangingName="OB_TargetReleasesPluralRowChanging" msprop:Generator_RowEvHandlerName="OB_TargetReleasesPluralRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_TargetReleasesPluralRowDeleted" msprop:Generator_RowEvArgName="OB_TargetReleasesPluralRowChangeEvent" msprop:Generator_RowChangedName="OB_TargetReleasesPluralRowChanged" msprop:Generator_RowClassName="OB_TargetReleasesPluralRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="TargetReleasePlural" msprop:Generator_ColumnVarNameInTable="columnTargetReleasePlural" msprop:Generator_ColumnPropNameInRow="TargetReleasePlural" msprop:Generator_ColumnPropNameInTable="TargetReleasePluralColumn" msprop:Generator_UserColumnName="TargetReleasePlural" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OB_VerifiedIn_Releases" msprop:Generator_TableClassName="OB_VerifiedIn_ReleasesDataTable" msprop:Generator_TableVarName="tableOB_VerifiedIn_Releases" msprop:Generator_TablePropName="OB_VerifiedIn_Releases" msprop:Generator_RowDeletingName="OB_VerifiedIn_ReleasesRowDeleting" msprop:Generator_UserTableName="OB_VerifiedIn_Releases" msprop:Generator_RowChangingName="OB_VerifiedIn_ReleasesRowChanging" msprop:Generator_RowEvHandlerName="OB_VerifiedIn_ReleasesRowChangeEventHandler" msprop:Generator_RowDeletedName="OB_VerifiedIn_ReleasesRowDeleted" msprop:Generator_RowEvArgName="OB_VerifiedIn_ReleasesRowChangeEvent" msprop:Generator_RowChangedName="OB_VerifiedIn_ReleasesRowChanged" msprop:Generator_RowClassName="OB_VerifiedIn_ReleasesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUGID" msprop:Generator_ColumnVarNameInTable="columnBUGID" msprop:Generator_ColumnPropNameInRow="BUGID" msprop:Generator_ColumnPropNameInTable="BUGIDColumn" msprop:Generator_UserColumnName="BUGID" type="xs:int" />
+              <xs:element name="ReleaseVerified" msprop:Generator_ColumnVarNameInTable="columnReleaseVerified" msprop:Generator_ColumnPropNameInRow="ReleaseVerified" msprop:Generator_ColumnPropNameInTable="ReleaseVerifiedColumn" msprop:Generator_UserColumnName="ReleaseVerified" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="160" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_backlog" msprop:Generator_TableClassName="sp_backlogDataTable" msprop:Generator_TableVarName="tablesp_backlog" msprop:Generator_TablePropName="sp_backlog" msprop:Generator_RowDeletingName="sp_backlogRowDeleting" msprop:Generator_UserTableName="sp_backlog" msprop:Generator_RowChangingName="sp_backlogRowChanging" msprop:Generator_RowEvHandlerName="sp_backlogRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_backlogRowDeleted" msprop:Generator_RowEvArgName="sp_backlogRowChangeEvent" msprop:Generator_RowChangedName="sp_backlogRowChanged" msprop:Generator_RowClassName="sp_backlogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bugid" msprop:Generator_ColumnVarNameInTable="columnbugid" msprop:Generator_ColumnPropNameInRow="bugid" msprop:Generator_ColumnPropNameInTable="bugidColumn" msprop:Generator_UserColumnName="bugid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="feature" msprop:Generator_ColumnVarNameInTable="columnfeature" msprop:Generator_ColumnPropNameInRow="feature" msprop:Generator_ColumnPropNameInTable="featureColumn" msprop:Generator_UserColumnName="feature" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="count" msprop:Generator_ColumnVarNameInTable="columncount" msprop:Generator_ColumnPropNameInRow="count" msprop:Generator_ColumnPropNameInTable="countColumn" msprop:Generator_UserColumnName="count" type="xs:int" minOccurs="0" />
+              <xs:element name="prior_state" msprop:Generator_ColumnVarNameInTable="columnprior_state" msprop:Generator_ColumnPropNameInRow="prior_state" msprop:Generator_ColumnPropNameInTable="prior_stateColumn" msprop:Generator_UserColumnName="prior_state" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="new_state" msprop:Generator_ColumnVarNameInTable="columnnew_state" msprop:Generator_ColumnPropNameInRow="new_state" msprop:Generator_ColumnPropNameInTable="new_stateColumn" msprop:Generator_UserColumnName="new_state" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transition" msprop:Generator_ColumnVarNameInTable="columntransition" msprop:Generator_ColumnPropNameInRow="transition" msprop:Generator_ColumnPropNameInTable="transitionColumn" msprop:Generator_UserColumnName="transition" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_Jasper_Fixed_all" msprop:Generator_TableClassName="sp_Jasper_Fixed_allDataTable" msprop:Generator_TableVarName="tablesp_Jasper_Fixed_all" msprop:Generator_TablePropName="sp_Jasper_Fixed_all" msprop:Generator_RowDeletingName="sp_Jasper_Fixed_allRowDeleting" msprop:Generator_UserTableName="sp_Jasper_Fixed_all" msprop:Generator_RowChangingName="sp_Jasper_Fixed_allRowChanging" msprop:Generator_RowEvHandlerName="sp_Jasper_Fixed_allRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_Jasper_Fixed_allRowDeleted" msprop:Generator_RowEvArgName="sp_Jasper_Fixed_allRowChangeEvent" msprop:Generator_RowChangedName="sp_Jasper_Fixed_allRowChanged" msprop:Generator_RowClassName="sp_Jasper_Fixed_allRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BugID" msprop:Generator_ColumnVarNameInTable="columnBugID" msprop:Generator_ColumnPropNameInRow="BugID" msprop:Generator_ColumnPropNameInTable="BugIDColumn" msprop:Generator_UserColumnName="BugID" type="xs:int" minOccurs="0" />
+              <xs:element name="Enter_x0020_Fixed" msprop:Generator_ColumnVarNameInTable="columnEnter_Fixed" msprop:Generator_ColumnPropNameInRow="Enter_Fixed" msprop:Generator_ColumnPropNameInTable="Enter_FixedColumn" msprop:Generator_UserColumnName="Enter Fixed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exit_x0020_Fixed" msprop:Generator_ColumnVarNameInTable="columnExit_Fixed" msprop:Generator_ColumnPropNameInRow="Exit_Fixed" msprop:Generator_ColumnPropNameInTable="Exit_FixedColumn" msprop:Generator_UserColumnName="Exit Fixed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Submitter" msprop:Generator_ColumnVarNameInTable="columnSubmitter" msprop:Generator_ColumnPropNameInRow="Submitter" msprop:Generator_ColumnPropNameInTable="SubmitterColumn" msprop:Generator_UserColumnName="Submitter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_Jasper_Info" msprop:Generator_TableClassName="sp_Jasper_InfoDataTable" msprop:Generator_TableVarName="tablesp_Jasper_Info" msprop:Generator_TablePropName="sp_Jasper_Info" msprop:Generator_RowDeletingName="sp_Jasper_InfoRowDeleting" msprop:Generator_UserTableName="sp_Jasper_Info" msprop:Generator_RowChangingName="sp_Jasper_InfoRowChanging" msprop:Generator_RowEvHandlerName="sp_Jasper_InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_Jasper_InfoRowDeleted" msprop:Generator_RowEvArgName="sp_Jasper_InfoRowChangeEvent" msprop:Generator_RowChangedName="sp_Jasper_InfoRowChanged" msprop:Generator_RowClassName="sp_Jasper_InfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BugID" msprop:Generator_ColumnVarNameInTable="columnBugID" msprop:Generator_ColumnPropNameInRow="BugID" msprop:Generator_ColumnPropNameInTable="BugIDColumn" msprop:Generator_UserColumnName="BugID" type="xs:int" minOccurs="0" />
+              <xs:element name="Enter_x0020_Waiting_x0020_for_x0020_Info" msprop:Generator_ColumnVarNameInTable="columnEnter_Waiting_for_Info" msprop:Generator_ColumnPropNameInRow="Enter_Waiting_for_Info" msprop:Generator_ColumnPropNameInTable="Enter_Waiting_for_InfoColumn" msprop:Generator_UserColumnName="Enter Waiting for Info" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exit_x0020_Waiting_x0020_for_x0020_Info" msprop:Generator_ColumnVarNameInTable="columnExit_Waiting_for_Info" msprop:Generator_ColumnPropNameInRow="Exit_Waiting_for_Info" msprop:Generator_ColumnPropNameInTable="Exit_Waiting_for_InfoColumn" msprop:Generator_UserColumnName="Exit Waiting for Info" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Submitter" msprop:Generator_ColumnVarNameInTable="columnSubmitter" msprop:Generator_ColumnPropNameInRow="Submitter" msprop:Generator_ColumnPropNameInTable="SubmitterColumn" msprop:Generator_UserColumnName="Submitter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_Jasper_Info_all" msprop:Generator_TableClassName="sp_Jasper_Info_allDataTable" msprop:Generator_TableVarName="tablesp_Jasper_Info_all" msprop:Generator_TablePropName="sp_Jasper_Info_all" msprop:Generator_RowDeletingName="sp_Jasper_Info_allRowDeleting" msprop:Generator_UserTableName="sp_Jasper_Info_all" msprop:Generator_RowChangingName="sp_Jasper_Info_allRowChanging" msprop:Generator_RowEvHandlerName="sp_Jasper_Info_allRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_Jasper_Info_allRowDeleted" msprop:Generator_RowEvArgName="sp_Jasper_Info_allRowChangeEvent" msprop:Generator_RowChangedName="sp_Jasper_Info_allRowChanged" msprop:Generator_RowClassName="sp_Jasper_Info_allRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BugID" msprop:Generator_ColumnVarNameInTable="columnBugID" msprop:Generator_ColumnPropNameInRow="BugID" msprop:Generator_ColumnPropNameInTable="BugIDColumn" msprop:Generator_UserColumnName="BugID" type="xs:int" minOccurs="0" />
+              <xs:element name="Enter_x0020_Waiting_x0020_for_x0020_Info" msprop:Generator_ColumnVarNameInTable="columnEnter_Waiting_for_Info" msprop:Generator_ColumnPropNameInRow="Enter_Waiting_for_Info" msprop:Generator_ColumnPropNameInTable="Enter_Waiting_for_InfoColumn" msprop:Generator_UserColumnName="Enter Waiting for Info" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exit_x0020_Waiting_x0020_for_x0020_Info" msprop:Generator_ColumnVarNameInTable="columnExit_Waiting_for_Info" msprop:Generator_ColumnPropNameInRow="Exit_Waiting_for_Info" msprop:Generator_ColumnPropNameInTable="Exit_Waiting_for_InfoColumn" msprop:Generator_UserColumnName="Exit Waiting for Info" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Submitter" msprop:Generator_ColumnVarNameInTable="columnSubmitter" msprop:Generator_ColumnPropNameInRow="Submitter" msprop:Generator_ColumnPropNameInTable="SubmitterColumn" msprop:Generator_UserColumnName="Submitter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_Associated_Releases" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+    <xs:unique name="OB_ChangeActions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_ChangeActions" />
+      <xs:field xpath="mstns:CHACTID" />
+    </xs:unique>
+    <xs:unique name="OB_FixedIn_Releases_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_FixedIn_Releases" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+    <xs:unique name="OB_Fixes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_Fixes" />
+      <xs:field xpath="mstns:FIXID" />
+    </xs:unique>
+    <xs:unique name="OB_Languages_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_Languages" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+    <xs:unique name="OB_Platforms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_Platforms" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+    <xs:unique name="OB_TargetReleasesGateway_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_TargetReleasesGateway" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+    <xs:unique name="OB_TargetReleasesPlural_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_TargetReleasesPlural" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+    <xs:unique name="OB_VerifiedIn_Releases_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OB_VerifiedIn_Releases" />
+      <xs:field xpath="mstns:BUGID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
